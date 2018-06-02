@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Посетителям — ОХМ</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style-adaptive.css">
+<link rel="stylesheet" href="../css/icomoonstyle.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Mono" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+<script>
+function subMenuOp()
+{document.getElementById("submenu").style.display = "block";
+document.getElementById("submenu").style.opacity = "1"}
+function subMenuCl()
+{document.getElementById("submenu").style.display = "none"}
+function navOp()
+{document.getElementById("navbar").style.display = "block";
+document.getElementById("navCl").style.display = "block";
+document.getElementById("navOp").style.display = "none";}
+function navCl()
+{document.getElementById("navbar").style.display = "none";
+document.getElementById("navOp").style.display = "block";
+document.getElementById("navCl").style.display = "none";}
+</script>
+</head>
+<body>
+<header>
+<a><div class="here home2">
+<img src="../images/logoW.svg" alt="" id="logomob">
+<span class="icon-close" id="navCl" onclick="navCl()"></span>
+<span class="icon-bar" id="navOp" onclick="navOp()"></span>
+</div></a>
+</header>
+<nav id="navbar">
+<div class="navblock">
+<a href="../index.html"><div class="navblock2 home"><span class="hidden">Главная</span><img src="../images/logoB.svg" alt="" id="logo"></div></a>
+</div>
+<div class="navblock">
+<a href="../html/o-muzeye.html"><div class="navblock2 nowrap">О музее</div></a>
+</div>
+<div class="navblock" onmouseover="subMenuOp()" onmouseout="subMenuCl()">
+<a><div class="navblock2">Экспозиция</div></a>
+<div id="submenu">
+<a href="../html/ikonopis.html"><div class="navblock2 sub">Иконопись</div></a>
+<a href="../html/iskusstvo-xvii-xix-vv.html"><div class="navblock2 sub">Искусство XVII–XIX вв.</div></a>
+<a href="../html/iskusstvo-xx-v.html"><div class="navblock2 sub">Искусство XX века</div></a>
+<a href="../html/dpi.html"><div class="navblock2 sub">ДПИ</div></a>
+<a href="../html/grot.html"><div class="navblock2 sub">Грот</div></a>
+<a href="../html/zheltyye-velikany.html"><div class="navblock2 sub">«Желтые великаны»</div></a>
+</div>
+</div>
+<div class="navblock">
+<a href="../html/posetitelyam.html"><div class="navblock2 here">Посетителям</div></a>
+</div>
+<div class="navblock">
+<a href="../html/kontakty.html"><div class="navblock2">Контакты</div></a>
+</div>
+<div class="navblock social">
+<div class="navblock2">
+<p>
+<a href="https://www.facebook.com/groups/fineartsmuseum/" class="icon-facebook2" target="blank"></a>
+<a href="https://www.instagram.com/artmuseum_od/" class="icon-instagram" target="blank"></a>
+<a href="https://twitter.com/" class="icon-twitter" target="blank"></a>
+<a href="https://plus.google.com/+OfamOdUa" class="icon-google-plus" target="blank"></a>
+<a href="https://www.youtube.com/channel/UCuQzi1l90Gx4eXZK1o69ADQ" class="icon-youtube" target="blank"></a>
+</p>
+</div>
+</div>
+</nav>
+<section class="top bottom">
+<div class="container3">
+<h2 class="title">Экскурсии и лекции</h2>
+<p class="left">Экскурсии проводятся в экспозиционных залах музея. Тематические экскурсии или цикл тематических экскурсий по выбору возможно заказать по предварительной записи.</p><br />
+<p class="left">Средняя продолжительность — 1 час.</p><br />
+<p class="left">Дополнительная информация:<br /><b>048 723 84 62</b><br /><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">promuseum@ofam.od.ua</a></p>
+<h2 class="title subtitle">Тематические экскурсии</h2>
+<ul class="left">
+<li><span>Иконопись. Украинская икона</span></li>
+<li><span>Товарищество южнорусских художников. Кириак Костанди</span></li>
+<li><span>Пейзаж в коллекции Одесского художественного музея</span></li>
+<li><span>Графика Тараса Григорьевича Шевченко в коллекции ОХМ</span></li>
+<li><span>Портрет конца XVIII – начала XIX веков</span></li>
+<li><span>Товарищество передвижных художественных выставок</span></li>
+<li><span>Иван Константинович Айвазовский</span></li>
+<li><span>Грот и подземный ход дворца Нарышкиных</span></li>
+<li><span>История и тайны дворца Нарышкиных</span></li>
+<li><span>Декоративно-прикладное искусство в ОХМ</span></li>
+<li><span>Країна мальованої кераміки (з історії українського гончарства)</span></li>
+<li><span>Волшебство ткани (из истории украинского ткачества)</span></li>
+</ul>
+<h2 class="title subtitle">Детский лекторий «Азбука искусств»</h2>
+<ul>
+<li><span>Сентябрь — Искусство вокруг нас. Жанры изобразительного искусства</span></li>
+<li><span>Октябрь — Пейзаж</span></li>
+<li><span>Ноябрь — Лица эпохи. Портрет</span></li>
+<li><span>Март — Живые вещи. Натюрморт</span></li>
+<li><span>Апрель — В мире животных. Анималистическое искусство</span></li>
+<li><span>Май — Бытовой жанр. Интерьер</span></li>
+<li><span>Июнь — Как смотреть картину? Выразительные средства живописи</span></li>
+</ul>
+</div>
+<div class="container2">
+<h1 class="title righttitle titletop">Посещение музея</h1>
+<div class="grid">
+<div class="righttext">Рабочие дни</div>
+<div class="center"><span class="nowrap">Летом/зимой</span></div>
+<div class="right2">Выходной</div>
+<div class="righttext">СР–ПН</div>
+<div class="center"><span class="nowrap">10.30–17.30</span><br /><span class="nowrap">10.00–17.00</span></div>
+<div class="right2">ВТ</div>
+</div>
+<p class="righttext">Последняя пятница месяца — санитарный день.</p>
+<p class="righttext">Закрытие кассы — за час до закрытия музея.</p><br />
+<p class="righttext">Расположение музея и схему проезда можно посмотреть <a href="../html/kontakty.html">здесь</a>.</p>
+<h2 class="title righttitle subtitle">Просьба к посетителям</h2>
+<ul class="righttext">
+<li><span>Оставлять в гардеробе музея рюкзаки и сумки больше формата листа А4, зонты, чемоданы, бутылки с водой и другие крупные предметы</span></li>
+<li><span>Не прикасаться к картинам и инсталляциям музея</span></li>
+<li><span>Не использовать ФОТОВСПЫШКУ, не снимать ВИДЕО</span></li>
+<li><span>Администрация музея оставляет за собой право запрещать вход отдельным посетителям</span></li>
+</ul>
+<div id="price"></div>
+<h2 class="title righttitle subtitle">Стоимость билетов</h2>
+<div class="grid2">
+<div class="cell righttext nar">Осмотр <a href="../html/iskusstvo-xvii-xix-vv.html">экспозиции XVII–XIX веков</a></div>
+<div class="cell right">50 UAH</div>
+<div class="cell righttext nar">Осмотр залов <a href="../html/sovremennoye-iskusstvo.html">искусства XX века</a></div>
+<div class="cell right">20 UAH</div>
+<div class="cell righttext nar">Посещение <a href="../html/grot.html">грота</a> (с обязательным экскурсионным обслуживанием — 70 UAH с группы)</div>
+<div class="cell right">30 UAH</div>
+<div class="cell righttext nar">Вход в лекторий</div>
+<div class="cell right">15 UAH</div>
+<div class="cell righttext nar">Художественная выставка</div>
+<div class="cell right">20 UAH</div>
+<div class="cell righttext nar">Экскурсионное обслуживание</div>
+<div class="cell right">70 UAH</div>
+<div class="cell righttext nar">Предоставление изображения предметов из собрания музея с правом одноразовой публикации (единица)</div>
+<div class="cell right">200 UAH</div>
+<div class="cell righttext nar"><b>Скидка</b> для пенсионеров, ветеранов войны, студентов, учеников, детей до 7 лет, инвалидов и других льготных категорий</div>
+<div class="cell right">-5%</div>
+</div>
+<p class="righttext">Сотрудникам музеев Украины — вход бесплатный</p>
+<p class="righttext">Телефон кассы: <b class="nowrap">048 723 72 87</b></p>
+<p class="righttext">Запись на экскурсии: <b class="nowrap">048 723 84 62</b></p>
+</div>
+</section>
+<footer>
+<p>
+<a href="https://www.facebook.com/groups/fineartsmuseum/" class="icon-facebook2" target="blank"></a>
+<a href="https://www.instagram.com/artmuseum_od/" class="icon-instagram" target="blank"></a>
+<a href="https://twitter.com/" class="icon-twitter" target="blank"></a>
+<a href="https://plus.google.com/+OfamOdUa" class="icon-google-plus" target="blank"></a>
+<a href="https://www.youtube.com/channel/UCuQzi1l90Gx4eXZK1o69ADQ" class="icon-youtube" target="blank"></a><br />
+Присоединяйтесь!
+</p>
+<form>
+<input type="email" placeholder="Email адрес...">
+<input type="submit" value="Подписаться">
+</form>
+</footer>
+</body>
+</html>

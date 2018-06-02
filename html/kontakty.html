@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Контакты — ОХМ</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style-adaptive.css">
+<link rel="stylesheet" href="../css/icomoonstyle.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Mono" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+<script>
+function subMenuOp()
+{document.getElementById("submenu").style.display = "block";
+document.getElementById("submenu").style.opacity = "1"}
+function subMenuCl()
+{document.getElementById("submenu").style.display = "none"}
+function navOp()
+{document.getElementById("navbar").style.display = "block";
+document.getElementById("navCl").style.display = "block";
+document.getElementById("navOp").style.display = "none";}
+function navCl()
+{document.getElementById("navbar").style.display = "none";
+document.getElementById("navOp").style.display = "block";
+document.getElementById("navCl").style.display = "none";}
+</script>
+</head>
+<body>
+<header>
+<a><div class="here home2">
+<img src="../images/logoW.svg" alt="" id="logomob">
+<span class="icon-close" id="navCl" onclick="navCl()"></span>
+<span class="icon-bar" id="navOp" onclick="navOp()"></span>
+</div></a>
+</header>
+<nav id="navbar">
+<div class="navblock">
+<a href="../index.html"><div class="navblock2 home"><span class="hidden">Главная</span><img src="../images/logoB.svg" alt="" id="logo"></div></a>
+</div>
+<div class="navblock">
+<a href="../html/o-muzeye.html"><div class="navblock2 nowrap">О музее</div></a>
+</div>
+<div class="navblock" onmouseover="subMenuOp()" onmouseout="subMenuCl()">
+<a><div class="navblock2">Экспозиция</div></a>
+<div id="submenu">
+<a href="../html/ikonopis.html"><div class="navblock2 sub">Иконопись</div></a>
+<a href="../html/iskusstvo-xvii-xix-vv.html"><div class="navblock2 sub">Искусство XVII–XIX вв.</div></a>
+<a href="../html/iskusstvo-xx-v.html"><div class="navblock2 sub">Искусство XX века</div></a>
+<a href="../html/dpi.html"><div class="navblock2 sub">ДПИ</div></a>
+<a href="../html/grot.html"><div class="navblock2 sub">Грот</div></a>
+<a href="../html/zheltyye-velikany.html"><div class="navblock2 sub">«Желтые великаны»</div></a>
+</div>
+</div>
+<div class="navblock">
+<a href="../html/posetitelyam.html"><div class="navblock2">Посетителям</div></a>
+</div>
+<div class="navblock">
+<a href="../html/kontakty.html"><div class="navblock2 here">Контакты</div></a>
+</div>
+<div class="navblock social">
+<div class="navblock2">
+<p>
+<a href="https://www.facebook.com/groups/fineartsmuseum/" class="icon-facebook2" target="blank"></a>
+<a href="https://www.instagram.com/artmuseum_od/" class="icon-instagram" target="blank"></a>
+<a href="https://twitter.com/" class="icon-twitter" target="blank"></a>
+<a href="https://plus.google.com/+OfamOdUa" class="icon-google-plus" target="blank"></a>
+<a href="https://www.youtube.com/channel/UCuQzi1l90Gx4eXZK1o69ADQ" class="icon-youtube" target="blank"></a>
+</p>
+</div>
+</div>
+</nav>
+<section class="top bottom rev">
+<div class="container3">
+<h1 class="title titletop">Расположение музея</h1>
+<p class="left">Адрес: Одесский художественный музей, <span class="nowrap">ул. Софиевская 5а,</span> <span class="nowrap">г. Одесса,</span> Украина, 65082<br />
+Остановка «Художественный музей. Ольгиевская»<br />
+Трамвай: №3, №12<br />
+Маршрутное такси: №121, №131, №137, №145, №146, №168, №241, №242, №570</p>
+<div id="map"></div>
+<script>
+function initMap() {
+var location = {lat: 46.4933166, lng: 30.7285747};
+var map = new google.maps.Map(document.getElementById('map'), {
+zoom: 18,
+center: location
+});
+// var marker = new google.maps.Marker({
+// position: location,
+// map: map
+// });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqPo4aV5PshTJk-cw0kQX1bH0W6byn-10&callback=initMap">
+ </script>
+<p class="left">Галерея <a href="../html/zheltyye-velikany.html">«Желтые великаны»</a> находится на цокольном этаже музея, вход со стороны бульвара Жванецкого (бывший бульвар Искусств).</p><br />
+<p class="left">Время работы и правила посещения музея можно найти <a href="../html/posetitelyam.html">здесь</a>.</p>
+</div>
+<div class="container2">
+<h2 class="title righttitle">Контакты</h2>
+<div class="contacts">
+<p class="righttext">Приемная<br />
+<span class="nowrap"><b>048 723 82 72</b></span><br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">mail@ofam.od.ua</a></p>
+<p class="righttext">Экскурсии<br />
+<span class="nowrap"><b>048 723 84 62</b></span><br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">promuseum@ofam.od.ua</a></p>
+<p class="righttext">«Желтые великаны»<br />
+<span class="nowrap"><b>048 723 80 90</b></span></p>
+<p class="righttext">Касса<br />
+<span class="nowrap"><b>048 723 72 87</b></span></p>
+<!-- <p class="righttext">Заместитель директора<br />
+Грязных Виталий Михайлович<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">sed@ofam.od.ua</a></p> -->
+<p class="righttext">Главный хранитель фондов<br />
+Еремина Людмила Анатольевна<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">ela@ofam.od.ua</a></p>
+<p class="righttext">Отдел выставочной работы<br />
+Абрамов Виталий Алексеевич<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">expo@ofam.od.ua</a></p>
+<p class="righttext">Отдел научно-просветительской работы<br />
+Шастель Инна Михайловна<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">promuseum@ofam.od.ua</a></p>
+<p class="righttext">Отдел искусства <span class="nowrap">XVI – </span>начала XX веков<br />
+Жулицкая Елена Васильевна<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">prerev@ofam.od.ua</a></p>
+<p class="righttext">Отдел искусства XX–XXI веков<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">art20-21@ofam.od.ua</a></p>
+<p class="righttext">Ученый секретарь<br />
+Полищук Наталья Сергеевна<br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">pns@ofam.od.ua</a></p>
+<p class="righttext">Библиотека<br />
+Мазур Татьяна Павловна<br />
+<span class="nowrap">ул. Софиевская, 8</span><br />
+(вход со стороны переулка Ляпунова)<br />
+<span class="nowrap"><b>048 723 10 98</b></span><br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">biblio@ofam.od.ua</a><br />
+выходные: ВС, ПН</p>
+<p class="righttext">Ананьевский историко-художественный музей (филиал ОХМ)<br />
+<span class="nowrap">г. Ананьев</span>, <span class="nowrap">ул. Независимости, 61</span><br />
+Шхалахов Александр Асланович<br />
+<span class="nowrap"><b>098 924 73 99</b></span><br />
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank">ananiev@ofam.od.ua</a><br />
+выходные: СБ, ВС</p>
+</div>
+</div>
+</section>
+<footer>
+<p>
+<a href="https://www.facebook.com/groups/fineartsmuseum/" class="icon-facebook2" target="blank"></a>
+<a href="https://www.instagram.com/artmuseum_od/" class="icon-instagram" target="blank"></a>
+<a href="https://twitter.com/" class="icon-twitter" target="blank"></a>
+<a href="https://plus.google.com/+OfamOdUa" class="icon-google-plus" target="blank"></a>
+<a href="https://www.youtube.com/channel/UCuQzi1l90Gx4eXZK1o69ADQ" class="icon-youtube" target="blank"></a><br />
+Присоединяйтесь!
+</p>
+<form>
+<input type="email" placeholder="Email адрес...">
+<input type="submit" value="Подписаться">
+</form>
+</footer>
+</body>
+</html>
